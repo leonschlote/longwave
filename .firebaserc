@@ -1,9 +1,9 @@
 {
   "projects": {
-    "default": "wavelength-online"
+    "default": "longwave-deutsch"
   },
   "targets": {
-    "wavelength-online": {
+    "longwave-deutsch": {
       "hosting": {
         "longwave": [
           "longwave"
