@@ -50,8 +50,8 @@ export function ViewScore() {
           <div>
             {TeamName(TeamReverse(clueGiver.team))} bekommt
             {wasCounterGuessCorrect
-              ? " 1 Punkt für point für Ihre korrekte Gegen-Schätzung."
-              : " 0 Punkte für Ihre Gegen-Schätzung."}
+              ? " 1 Punkt für die korrekte Richtungs-Schätzung."
+              : " keine Punkte für Ihre Richtungs-Schätzung."}
           </div>
         )}
         {bonusCoopTurn && (
