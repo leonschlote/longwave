@@ -33,11 +33,11 @@ export function SetupGame() {
           onClick={() => startGame(GameType.Teams)}
         />
         <Button
-          text="Cooperative: 2+ Players"
+          text="Kooperativ: 2+ Players"
           onClick={() => startGame(GameType.Cooperative)}
         />
         <Button
-          text="Free Play: 2+ Players"
+          text="Freies Spiel: 2+ Players"
           onClick={() => startGame(GameType.Freeplay)}
         />
       </CenteredRow>

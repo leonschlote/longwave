@@ -37,7 +37,7 @@ export function JoinTeam() {
   return (
     <CenteredColumn>
       <LongwaveAppTitle />
-      <div>Join Team:</div>
+      <div>Team Beitreten:</div>
       <CenteredRow
         style={{
           alignItems: "flex-start",

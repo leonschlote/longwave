@@ -34,12 +34,12 @@ export function TeamReverse(team: Team) {
 
 export function TeamName(team: Team) {
   if (team === Team.Left) {
-    return "LEFT BRAIN";
+    return "LINKE GEHIRNHÄLFTE";
   }
   if (team === Team.Right) {
-    return "RIGHT BRAIN";
+    return "RECHTE GEHIRNHÄLFTE";
   }
-  return "the players";
+  return "die Spieler";
 }
 
 export type PlayersTeams = {

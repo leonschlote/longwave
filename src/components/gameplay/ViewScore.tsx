@@ -76,7 +76,7 @@ function NextTurnOrEndGame() {
 
   const resetButton = (
     <Button
-      text="Reset Game"
+      text="Spiel zurücksetzen"
       onClick={() => {
         setGameState({
           ...InitialGameState(),
