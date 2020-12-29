@@ -33,7 +33,7 @@ export function MakeGuess() {
         <Spectrum spectrumCard={spectrumCard} guessingValue={gameState.guess} />
         <CenteredColumn>
           <div>
-            {clueGiver.name}'s clue: <strong>{gameState.clue}</strong>
+            {clueGiver.name}s Hinweis: <strong>{gameState.clue}</strong>
           </div>
           <div>Waiting for {guessingTeamString} to guess...</div>
           {Object.keys(gameState.players).length < 2 && (
@@ -66,7 +66,7 @@ export function MakeGuess() {
       />
       <CenteredColumn>
         <div>
-          {clueGiver.name}'s clue: <strong>{gameState.clue}</strong>
+          {clueGiver.name}s Hinweis: <strong>{gameState.clue}</strong>
         </div>
         <div>
           <Button

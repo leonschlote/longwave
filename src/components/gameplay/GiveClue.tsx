@@ -36,7 +36,7 @@ export function GiveClue() {
           <Spectrum spectrumCard={spectrumCard} />
         </Animate>
         <CenteredColumn>
-          <div>Waiting for {clueGiver.name} to provide a clue...</div>
+          <div>{clueGiver.name} denkt sich einen Hinweis aus...</div>
         </CenteredColumn>
       </div>
     );
@@ -64,7 +64,7 @@ export function GiveClue() {
     <div>
       {gameState.gameType !== GameType.Cooperative && (
         <CenteredColumn style={{ alignItems: "flex-end" }}>
-          <Button text="Draw a different card" onClick={redrawCard} />
+          <Button text="Eine andere Karte ziehen" onClick={redrawCard} />
         </CenteredColumn>
       )}
       <Animate animation="wipe-reveal-right">

@@ -33,11 +33,11 @@ export function Scoreboard() {
     const cardsRemaining = 7 + gameState.coopBonusTurns - gameState.turnsTaken;
     return (
       <CenteredColumn style={style}>
-        <em>Cooperative Score: {gameState.coopScore} POINTS</em>
+        <em>Gemeinsame Punktzahl: {gameState.coopScore} Punkte</em>
         <div>
           {cardsRemaining === 0
-            ? "Last Card!"
-            : "Cards remaining: " + cardsRemaining}
+            ? "Letzte Karte!"
+            : "Noch " + cardsRemaining + " Karten übrig."}
         </div>
         <CenteredRow style={{ flexWrap: "wrap" }}>
           {Object.keys(gameState.players).map(toPlayerRow)}
@@ -64,7 +64,7 @@ function TeamColumn(props: { team: Team; score: number }) {
   return (
     <CenteredColumn style={{ alignItems: "flex-start" }}>
       <div>
-        {TeamName(props.team)}: <AnimatableScore score={props.score} /> POINTS
+        {TeamName(props.team)}: <AnimatableScore score={props.score} /> Punkte
       </div>
       {members.map(toPlayerRow)}
     </CenteredColumn>

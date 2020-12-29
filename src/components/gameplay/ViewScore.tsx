@@ -43,7 +43,7 @@ export function ViewScore() {
       />
       <CenteredColumn>
         <div>
-          {clueGiver.name}'s clue: <strong>{gameState.clue}</strong>
+          {clueGiver.name}s Hinweis: <strong>{gameState.clue}</strong>
         </div>
         <div>Score: {score} points!</div>
         {gameState.gameType === GameType.Teams && (

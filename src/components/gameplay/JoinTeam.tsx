@@ -50,7 +50,7 @@ export function JoinTeam() {
             <div key={playerId}>{gameState.players[playerId].name}</div>
           ))}
           <div>
-            <Button text="Join" onClick={() => joinTeam(Team.Left)} />
+            <Button text="Beitreten" onClick={() => joinTeam(Team.Left)} />
           </div>
         </CenteredColumn>
         <CenteredColumn>
@@ -59,12 +59,12 @@ export function JoinTeam() {
             <div key={playerId}>{gameState.players[playerId].name}</div>
           ))}
           <div>
-            <Button text="Join" onClick={() => joinTeam(Team.Right)} />
+            <Button text="Beitreten" onClick={() => joinTeam(Team.Right)} />
           </div>
         </CenteredColumn>
       </CenteredRow>
       {gameState.roundPhase === RoundPhase.PickTeams && (
-        <Button text="Start Game" onClick={startGame} />
+        <Button text="Spiel starten" onClick={startGame} />
       )}
     </CenteredColumn>
   );
