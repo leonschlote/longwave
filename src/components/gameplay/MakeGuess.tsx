@@ -70,7 +70,7 @@ export function MakeGuess() {
         </div>
         <div>
           <Button
-            text={`Submit Guess for ${TeamName(localPlayer.team)}`}
+            text={'Schätzung endgültig abschicken'}
             onClick={() => {
               RecordEvent("guess_submitted", {
                 spectrum_card: spectrumCard.join("|"),
