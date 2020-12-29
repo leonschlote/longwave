@@ -29,7 +29,7 @@ export function SetupGame() {
       <LongwaveAppTitle />
       <CenteredRow style={{ flexWrap: "wrap" }}>
         <Button
-          text="Standard (Teams): 4+ Players"
+          text="Standard (2 Teams): 4+ Players"
           onClick={() => startGame(GameType.Teams)}
         />
         <Button
