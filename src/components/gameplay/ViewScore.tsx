@@ -45,18 +45,18 @@ export function ViewScore() {
         <div>
           {clueGiver.name}s Hinweis: <strong>{gameState.clue}</strong>
         </div>
-        <div>Score: {score} points!</div>
+        <div>Punktzahl: {score} Punkte!</div>
         {gameState.gameType === GameType.Teams && (
           <div>
-            {TeamName(TeamReverse(clueGiver.team))} gets
+            {TeamName(TeamReverse(clueGiver.team))} bekommt
             {wasCounterGuessCorrect
-              ? " 1 point for their correct counter guess."
-              : " 0 points for their counter guess."}
+              ? " 1 Punkt für point für Ihre korrekte Gegen-Schätzung."
+              : " 0 Punkte für Ihre Gegen-Schätzung."}
           </div>
         )}
         {bonusCoopTurn && (
           <div>
-            Your team earned a <strong>bonus turn!</strong>
+            Dein Team erhält eine <strong>Bonusrunde!</strong>
           </div>
         )}
         <NextTurnOrEndGame />
@@ -90,7 +90,7 @@ function NextTurnOrEndGame() {
   if (gameState.leftScore >= 10 && gameState.leftScore > gameState.rightScore) {
     return (
       <>
-        <div>{TeamName(Team.Left)} wins!</div>
+        <div>{TeamName(Team.Left)} Gewinnt!</div>
         {resetButton}
       </>
     );
@@ -102,7 +102,7 @@ function NextTurnOrEndGame() {
   ) {
     return (
       <>
-        <div>{TeamName(Team.Right)} wins!</div>
+        <div>{TeamName(Team.Right)} Gewinnt!</div>
         {resetButton}
       </>
     );
@@ -114,10 +114,11 @@ function NextTurnOrEndGame() {
   ) {
     return (
       <>
-        <div>Game Complete</div>
+        <div>Spielende</div>
         <div>
-          Your team's final cooperative score:{" "}
-          <strong>{gameState.coopScore} POINTS</strong>
+          Glückwunsch, Ihr habt gemeinsam{" "}
+          <strong>{gameState.coopScore} Punkte</strong>{" "}
+          erreicht!
         </div>
         {resetButton}
       </>
@@ -171,16 +172,17 @@ function NextTurnOrEndGame() {
     <>
       {bonusTurn && (
         <CenteredRow>
-          <div>Catchup activated: {scoringTeamString} takes a bonus turn! </div>
+          <div>Aufholen aktiviert: {scoringTeamString} bekommt eine Bonusrunde! </div>
           <Info>
-            After a team scores a four-point round, they get a bonus turn if
-            they are still behind the other team.
+            Nachdem ein Team einen Vier-Punkte Treffer landet,
+            bekommt es eine Bonusrunde, wenn es weniger Punkte
+            als das andere Team hat.
           </Info>
         </CenteredRow>
       )}
       {eligibleToDraw && (
         <Button
-          text="Draw next Spectrum Card"
+          text="Ziehe die nächste Spectrum-Karte"
           onClick={() => setGameState(NewRound(localPlayer.id, gameState))}
         />
       )}

@@ -77,7 +77,7 @@ export function GiveClue() {
         <CenteredRow>
           <input
             type="text"
-            placeholder="Clue..."
+            placeholder="Hinweis..."
             ref={inputElement}
             onKeyDown={(event) => {
               if (event.key !== "Enter") {
@@ -104,7 +104,7 @@ export function GiveClue() {
             </div>
           </Info>
         </CenteredRow>
-        <Button text="Submit Clue" onClick={submit} disabled={disableSubmit} />
+        <Button text="Hinweis abschicken" onClick={submit} disabled={disableSubmit} />
       </CenteredColumn>
     </div>
   );

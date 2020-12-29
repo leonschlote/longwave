@@ -39,7 +39,7 @@ export function TeamName(team: Team) {
   if (team === Team.Right) {
     return "RECHTE GEHIRNHÄLFTE";
   }
-  return "die Spieler";
+  return "die anderen Spieler";
 }
 
 export type PlayersTeams = {

@@ -44,7 +44,7 @@ export function MakeGuess() {
                 border: "1px solid black",
               }}
             >
-              <p>Lade andere Spieler ein dem Spiel beizutreten.</p>
+              <p>Lade weitere Spieler ein dem Spiel beizutreten.</p>
               <p>Teile diese URL mit Ihnen: {window.location.href}</p>
             </div>
           )}
