@@ -7,9 +7,6 @@
       "hosting": {
         "longwave": [
           "longwave"
-        ],
-        "dev": [
-          "longwave"
         ]
       }
     }
