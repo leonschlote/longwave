@@ -2,29 +2,12 @@
   "database": {
     "rules": "database.rules.json"
   },
-  "hosting": [
-    {
-      "target": "longwave-deutsch",
-      "public": "build",
-      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-      "rewrites": [
-        {
-          "source": "**",
-          "destination": "/index.html"
-        }
-      ]
-    },
-    {
-      "target": "dev",
-      "public": "build",
-      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-      "rewrites": [
-        {
-          "source": "**",
-          "destination": "/index.html"
-        }
-      ]
-    }
-  ],
-  "emulators": {}
-}
+  "hosting": {
+     "public": "public",
+     "ignore": [
+       "firebase.json",
+       "**/.*",
+       "**/node_modules/**"
+     ]
+   }
+ }
