@@ -14,13 +14,12 @@ export function CommonFooter() {
       }}
     >
       <p style={{ margin: 8 }}>
-        <Link href="https://www.wavelength.zone/" text="Wavelength" /> is
-        designed by Wolfgang Warsch, Alex Hague, and Justin Vickers.{" "}
+        <Link href="https://www.wavelength.zone/" text="Wavelength" /> wurde
+        von Wolfgang Warsch, Alex Hague und Justin Vickers entwickelt, von Evan Bailey und Margarethe Schoen{" "}
         <Link
           href="https://github.com/cynicaloptimist/longwave"
-          text="Adapted for web"
-        />{" "}
-        by Evan Bailey and Margarethe Schoen.
+          text="fürs Internet angepasst"
+        />{", "} und von Leon Schlote übersetzt.
       </p>
       {/* we want referrer, so: */}
       {/* eslint-disable-next-line react/jsx-no-target-blank */}

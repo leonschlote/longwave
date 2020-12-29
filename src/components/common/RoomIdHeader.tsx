@@ -19,7 +19,7 @@ export function RoomIdHeader() {
         color: "gray",
       }}
     >
-      <div style={{ margin: 4, padding: 4 }}>Room ID: {roomId}</div>
+      <div style={{ margin: 4, padding: 4 }}>Spiel-ID: {roomId}</div>
       <Tippy content={<RoomMenu />} interactive placement="bottom-end">
         <div tabIndex={0} style={{ padding: 8 }}>
           <FontAwesomeIcon icon={faEllipsisV} />
@@ -38,7 +38,7 @@ function RoomMenu() {
       style={{ cursor: "pointer" }}
       onClick={() => setGameState(InitialGameState())}
     >
-      Reset Room
+      Spiel zurücksetzen
     </div>
   );
 }

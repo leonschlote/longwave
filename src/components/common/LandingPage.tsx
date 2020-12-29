@@ -11,7 +11,7 @@ export function LandingPage() {
     <CenteredColumn>
       <LongwaveAppTitle />
       <Button
-        text="Create Room"
+        text="Neues Spiel erstellen"
         onClick={() => {
           history.push("/" + RandomFourCharacterString());
         }}

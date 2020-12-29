@@ -28,7 +28,7 @@ export function CounterGuess() {
         <Spectrum spectrumCard={spectrumCard} guessingValue={gameState.guess} />
         <CenteredColumn>
           <div>
-            {clueGiver.name}'s clue: <strong>{gameState.clue}</strong>
+            {clueGiver.name}s Hinweis: <strong>{gameState.clue}</strong>
           </div>
           <div>Waiting for {counterGuessTeamString} to guess left/right...</div>
         </CenteredColumn>
