@@ -21,7 +21,7 @@ export function Scoreboard() {
   if (gameState.gameType === GameType.Freeplay) {
     return (
       <CenteredColumn style={style}>
-        <em>Free Play</em>
+        <em>Freies Spiel</em>
         <CenteredRow style={{ flexWrap: "wrap" }}>
           {Object.keys(gameState.players).map(toPlayerRow)}
         </CenteredRow>
@@ -64,7 +64,7 @@ function TeamColumn(props: { team: Team; score: number }) {
   return (
     <CenteredColumn style={{ alignItems: "flex-start" }}>
       <div>
-        {TeamName(props.team)}: <AnimatableScore score={props.score} /> Punkte
+        {TeamName(props.team)}:<br/> <AnimatableScore score={props.score} /> Punkte
       </div>
       {members.map(toPlayerRow)}
     </CenteredColumn>

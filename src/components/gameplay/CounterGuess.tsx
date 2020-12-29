@@ -46,13 +46,13 @@ export function CounterGuess() {
       </CenteredColumn>
       <CenteredRow>
         <Button
-          text="Target is to the Left"
+          text="Zielwert ist weiter links"
           onClick={() =>
             setGameState(ScoreTeamRound(gameState, clueGiver.team, "left"))
           }
         />
         <Button
-          text="Target is to the Right"
+          text="Zielwert ist weiter links"
           onClick={() =>
             setGameState(ScoreTeamRound(gameState, clueGiver.team, "right"))
           }

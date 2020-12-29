@@ -49,14 +49,14 @@ export function Spectrum(props: {
   if (props.targetValue !== undefined) {
     marks[props.targetValue] = {
       style: { fontWeight: "bold", color: "black", cursor: "auto" },
-      label: "Ziel",
+      label: "Zielwert",
     };
   }
 
   if (props.guessingValue !== undefined) {
     marks[props.guessingValue] = {
       style: { fontWeight: "bold", color: "black", cursor: "auto" },
-      label: "Guessing...",
+      label: "Schätzen...",
     };
   }
 
