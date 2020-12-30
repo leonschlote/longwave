@@ -19,7 +19,7 @@ export function CommonFooter() {
         <Link
           href="https://github.com/cynicaloptimist/longwave"
           text="fürs Internet angepasst"
-        />{" "} und von Leon Schlote übersetzt.
+        />{"."}
       </p>
       {/* we want referrer, so: */}
       {/* eslint-disable-next-line react/jsx-no-target-blank */}
