@@ -52,7 +52,7 @@ export function CounterGuess() {
           }
         />
         <Button
-          text="Zielwert ist weiter links"
+          text="Zielwert ist weiter rechts"
           onClick={() =>
             setGameState(ScoreTeamRound(gameState, clueGiver.team, "right"))
           }
