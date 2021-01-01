@@ -30,7 +30,7 @@ export function CounterGuess() {
           <div>
             {clueGiver.name}s Hinweis: <strong>{gameState.clue}</strong>
           </div>
-          <div>Waiting for {counterGuessTeamString} to guess left/right...</div>
+          <div>{counterGuessTeamString} schätzen links/rechts...</div>
         </CenteredColumn>
       </div>
     );
