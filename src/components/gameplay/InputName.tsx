@@ -8,7 +8,7 @@ export function InputName(props: { setName: (name: string) => void }) {
   return (
     <CenteredColumn>
       <LongwaveAppTitle />
-      <div>Enter your name:</div>
+      <div>Wähle einen Namen:</div>
       <input
         type="text"
         ref={inputRef}
